@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <mt-header title="地下城堡2助手">
+    <mt-header  fixed title="地下城堡2助手">
       <router-link to="/" slot="left">
         <mt-button icon="back">返回</mt-button>
       </router-link>
@@ -48,12 +48,16 @@ export default {
 </script>
 
 <style>
-#app1 {
+#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body
+{
+ margin: 0px;
 }
 </style>

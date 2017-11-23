@@ -48,6 +48,9 @@ export default {
   computed:{
       hit_s(){
           var total_hit_rate = ((parseFloat((this.technique * 30) / (this.speed)) + parseFloat(this.hit_rate)) / 100).toFixed(2);
+          if(total_hit_rate > 1){
+              total_hit_rate = 1
+          }
           console.log("total_hit_rate:" + total_hit_rate)
           var total_violent_rate = (parseFloat(this.violent_rate) + parseFloat(this.technique * 0.05)) / 100;
           console.log("total_violent_rate:" + total_violent_rate)
