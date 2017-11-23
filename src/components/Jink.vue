@@ -30,7 +30,7 @@ export default {
   },
   computed:{
       result:function(){
-          return 100 - (parseFloat((this.technique * 100) / (this.speed * 3)  - this.jink_rate) + parseFloat(this.hit_rate)).toFixed(2)
+          return 100 - (parseFloat((this.technique * 30) / (this.speed)  - this.jink_rate) + parseFloat(this.hit_rate)).toFixed(2)
       }
   }
 }

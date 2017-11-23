@@ -25,6 +25,10 @@ export default {
         {
           name:'闪避计算',
           method:this.gotoJink
+        },
+        {
+          name:'输出计算',
+          method:this.gotoHarm
         }
       ]
     }
@@ -35,6 +39,9 @@ export default {
     },
     gotoJink(){
       this.$router.push({path:'/jink'})
+    },
+    gotoHarm(){
+      this.$router.push({path:'/harm'})
     }
   }
 }
