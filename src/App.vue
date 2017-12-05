@@ -29,6 +29,10 @@ export default {
         {
           name:'输出计算',
           method:this.gotoHarm
+        },
+        {
+          name:'api test',
+          method:this.gotoApiTest
         }
       ]
     }
@@ -42,7 +46,10 @@ export default {
     },
     gotoHarm(){
       this.$router.push({path:'/harm'})
-    }
+    },
+    gotoApiTest(){
+      this.$router.push({path:'/api_test'})
+    },
   }
 }
 </script>
